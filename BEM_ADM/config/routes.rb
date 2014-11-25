@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   root :to => 'pages#index'
   
-  resources :funcionarios
-  resources :produtos
+  resources :worker
+  resources :products
   #Verbos HTTP
   #GET
   #POST
