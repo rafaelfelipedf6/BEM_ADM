@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  nascimento: 2014-11-26
+  cpf: MyString
+  entrada: 2014-11-26
+  salario: 1.5
+  cep: MyString
+  estado: MyString
+  endereco: MyString
+  num: MyString
+
+two:
+  nome: MyString
+  nascimento: 2014-11-26
+  cpf: MyString
+  entrada: 2014-11-26
+  salario: 1.5
+  cep: MyString
+  estado: MyString
+  endereco: MyString
+  num: MyString

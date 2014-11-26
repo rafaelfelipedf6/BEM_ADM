@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
+  root :to => 'home#index'
+  devise_for :users
   resources :vendedors
-
-  root :to => 'pages#index'
-  
-  resources :worker
   resources :products
+  resources :workers
   #Verbos HTTP
   #GET
   #POST

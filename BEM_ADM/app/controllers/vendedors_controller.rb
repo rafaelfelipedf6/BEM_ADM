@@ -69,6 +69,6 @@ class VendedorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def vendedor_params
-      params.require(:vendedor).permit(:nome, :area, :inicio)
+      params.require(:vendedor).permit(:area, :inicio)
     end
 end

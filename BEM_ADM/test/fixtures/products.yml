@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  categoria: MyString
+  subcategoria: MyString
+  preco: 1.5
+  peso: 1
+  quantidade: 1
+  entrada: 2014-11-26
+  validade: 2014-11-26
+
+two:
+  nome: MyString
+  categoria: MyString
+  subcategoria: MyString
+  preco: 1.5
+  peso: 1
+  quantidade: 1
+  entrada: 2014-11-26
+  validade: 2014-11-26
