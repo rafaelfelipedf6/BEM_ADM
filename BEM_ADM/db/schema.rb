@@ -11,40 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141125201253) do
-
-  create_table "pages", force: true do |t|
-  end
+ActiveRecord::Schema.define(version: 20141126152743) do
 
   create_table "products", force: true do |t|
-    t.string   "nome"
-    t.string   "categoria"
-    t.integer  "peso"
-    t.integer  "ident"
-    t.float    "preco"
-    t.integer  "quantidade"
-    t.datetime "entrada"
-    t.datetime "vencimento"
+    t.string  "nome"
+    t.string  "categoria"
+    t.string  "subcategoria"
+    t.float   "preco"
+    t.integer "peso"
+    t.integer "quantidade"
+    t.date    "entrada"
+    t.date    "validade"
   end
 
-  create_table "tabelas", force: true do |t|
+  create_table "vendedors", force: true do |t|
     t.string   "nome"
-    t.string   "categoria"
-    t.integer  "peso"
-    t.float    "preco"
-    t.integer  "quantidade"
-    t.datetime "entrada"
-    t.datetime "vencimento"
+    t.string   "area"
+    t.datetime "inicio"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
-  create_table "worker", force: true do |t|
-    t.string   "nome"
-    t.string   "cpf"
-    t.string   "cargo"
-    t.integer  "idade"
-    t.datetime "datanascimento"
-    t.float    "salario"
-    t.datetime "entrada"
+  create_table "workers", force: true do |t|
+    t.string "name"
+    t.date   "nascimento"
+    t.string "cpf"
+    t.date   "entrada"
+    t.float  "salario"
+    t.string "cep"
+    t.string "estado"
+    t.string "endereco"
+    t.string "num"
   end
 
 end

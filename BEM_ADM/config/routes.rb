@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :vendedors
+
   root :to => 'pages#index'
   
   resources :worker
