@@ -1,4 +1,5 @@
 class WorkersController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_worker, only: [:show, :edit, :update, :destroy]
 
   # GET /workers
