@@ -15,9 +15,6 @@
 					
 					  <li><%= link_to "Home", root_path, :class => 'navbar-link'  %></li>
 					  <li><%= link_to 'Editar Perfil', edit_user_registration_url, :class => 'navbar-link' %></li>
-					  <li><%= link_to 'Ver Funcionários', product_url, :class => 'navbar-link' %></li>
-					  <li><%= link_to 'Ver Produtos', worker_url, :class => 'navbar-link' %></li>
-					  <li><%= link_to 'Editar Perfil', edit_user_registration_url, :class => 'navbar-link' %></li>
 					  <li><%= link_to "Sair", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>					  
 					<% else %>
 					  <li><%= link_to "Home", root_path, :class => 'navbar-link'  %></li>
@@ -38,9 +35,16 @@
 		</ul>
 		<div id="pager"></div>
 	</div> -->
-	<p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
 
+    <div id="content">
+    	<p class="notice"><%= notice %></p>
+    	<p class="alert"><%= alert %></p>
+    	<div id="page_wrapper">
+		<%= yield %>
+    	</div>
+    	
+    </div>
+    <div id="footer">
+    </div>
 </body>
 </html>

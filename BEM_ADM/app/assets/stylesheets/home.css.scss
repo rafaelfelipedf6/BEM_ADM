@@ -5,7 +5,7 @@
 #header{
 	background:#C7DADD;
 	color:#000;
-	height:150px;
+	height:185px;
 	float:left;
 	width:100%;
 }
@@ -38,4 +38,24 @@
 #header #logo{
 	margin:0 auto;
 	width:427px;
+}
+
+#content{
+	width:1000px;
+	background:#FFF;
+	color:#333;
+	margin:0 auto;
+	padding:10px;
+	z-index:100;
+	clear:both;
+}
+#page_wrapper{
+	margin:10px;
+}
+#footer{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	background:#C7DADD;
+	height:30px;
 }
